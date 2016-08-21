@@ -1,0 +1,70 @@
+main {
+  height: 1200px;
+  background-color: #464B56;
+}
+
+.container {
+  background-color: #FEFEFE;
+  height: 870px;
+  margin-top: 164px;
+  border-radius: 7px;
+}
+
+.content {
+  display: inline-block;
+  padding: 60px;
+}
+
+.first-btn {
+  margin-top: 90px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #FEFEFE;
+  border: 1px solid;
+  border-color: silver;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button i {
+
+/*   display: inline-block; */
+  margin: 10px;
+  margin-top: 15px;
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+.right-img {
+  height: 870px;
+  display: inline-block;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: url("https://dl.dropboxusercontent.com/u/31429048/static/Signin/town.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3.5em;
+  color: grey;
+}
+
+h6, p {
+  font-family: sans-serif;
+  color: grey;
+}
+
+.footer {
+  display: inline-block;
+  height: 50px;
+}
