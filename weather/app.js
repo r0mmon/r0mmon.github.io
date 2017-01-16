@@ -13,8 +13,7 @@ function getPosition (){
       // x.innerHTML = wetherData;
       $("#demo").html('<h2>Location: ' + wetherData.name + '</h2>' +
       '<br>' +
-      '<h2>Temperature: ' + wetherData.main.temp +
-      '</h2>');
+      '<h2>Temperature: ' + Math.round(wetherData.main.temp) + " &deg;" + "C" + '</h2>');
       });
     });
   } else {
