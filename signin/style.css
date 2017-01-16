@@ -68,3 +68,7 @@ h6, p {
   display: inline-block;
   height: 50px;
 }
+
+.btn-text {
+  padding-top: 28px;
+}
