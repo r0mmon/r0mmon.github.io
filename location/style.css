@@ -1,5 +1,6 @@
 body {
   background-color: #222222;
+  color: #aaa;
 }
 h1 {
   color: #aaa;
@@ -25,4 +26,14 @@ h2 {
 
 .geo {
   color: white;
+}
+
+td {
+  padding-right: 60;
+  padding-left: 60;
+  padding-top: 5;
+}
+
+table {
+  margin-top: 60;
 }
