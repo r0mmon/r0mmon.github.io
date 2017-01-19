@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="row-content">
-      <div class="search-aria col-sm-12">
-        <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random"><p>Click here for a random article</p></a>
-        <a href="#"><img class="img-search" src="img/search-icon.png" alt="Search"></a>
+    <div id="root" class="container-fluid">
+      <div class="row-content">
+        <div class="search-aria col-sm-12">
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random"><p>Click here for a random article</p></a>
+          <a href="#"><img class="img-search" src="img/search-icon.png" alt="Search"></a>
 
-        <p>Click icon to search...</p>
+          <p>Click icon to search...</p>
+        </div>
+        <div class="form-group col-sm-6 col-sm-offset-3">
+          <input class="form-control col-sm-6" type="text" v-model="message" v-on:keyup.enter="wiki.result" placeholder="Search text">
+        </div>
       </div>
-      <div class="form-group col-sm-6 col-sm-offset-3">
-        <input class="form-control col-sm-6" type="text" placeholder="Search text">
+      <div class="row-content">
+        <div class="col-sm-10 col-sm-offset-1" v-for="item in res">
+          <a target="_blank" v-bind:href="item.url"><p style="font-size: 1.2em; text-align: left">{{ item.title }}</p></a>
+        </div>
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="app.js" charset="utf-8"></script>
 </html>

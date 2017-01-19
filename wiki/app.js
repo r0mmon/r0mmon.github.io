@@ -1,13 +1,32 @@
-function getSearchResult() {
-  $.ajax( {
-    url: 'https://en.wikipedia.org/w/api.php',
-    data: queryData,
-    dataType: 'json',
-    type: 'GET',
-    // headers: { 'Api-User-Agent': 'Example/1.0' },
-    success: function(data) {
-      alert (data.result);
-       // do something with data
+
+
+var wiki = new Vue({
+  el: '#root',
+  data: {
+    message: '',
+    res: []
+  },
+  methods: {
+    result: function () {
+      $.ajax( {
+        url: 'http://ru.wikipedia.org/w/api.php',
+        data:  {
+          'action': "opensearch",
+          'format': "json",
+          'search': this.message//request.term
+          },
+        dataType: 'jsonp',
+        type: 'GET',
+        success: function(responce) {
+          wiki.res = [];
+          for (var i = 0; i < responce[2].length; i++) {
+            var x = {};
+            x.title = responce[2][i];
+            x.url = responce[3][i];
+            wiki.res.push(x);
+          }
+        }
+      });
     }
-} );
-}
+  }
+})

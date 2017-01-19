@@ -29,6 +29,6 @@ var main = function() {
             messageIndex = messageIndex + 1;
             displayMessage(messageIndex);
             }, 3000); };
-       displayMessage(0);
+      //  displayMessage(0);
 };
 $(document).ready(main);
