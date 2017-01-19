@@ -1,0 +1,22 @@
+body {
+  background-color: #0B2B41;
+}
+
+p {
+  color: #b57654;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.search-aria {
+  margin-top: 350px;
+  text-align: center;
+}
+.img-search {
+  max-width: 80px;
+}
+
+/*input {
+  max-width: 350px;
+}*/

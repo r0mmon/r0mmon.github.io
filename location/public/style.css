@@ -1,0 +1,39 @@
+body {
+  background-color: #222222;
+  color: #aaa;
+}
+h1 {
+  color: #aaa;
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 70px;
+}
+
+h2 {
+  color: #A09AFF;
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 40px;
+}
+
+.col-xs-8 {
+  padding: 60px;
+  color: #aaa;
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 30px;
+}
+
+.geo {
+  color: white;
+}
+
+td {
+  padding-right: 60;
+  padding-left: 60;
+  padding-top: 5;
+}
+
+table {
+  margin-top: 60;
+}
